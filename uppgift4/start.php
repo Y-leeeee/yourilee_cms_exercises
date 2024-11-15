@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PHP & MySQL</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
-  <body>
-  <?php
-echo "here i write uppgift4 code"
+<body>
+
+<?php
+$t = date("H");
+
+if ($t < "12") {
+  echo "Good morning!";
+} elseif ($t < "20") {
+  echo "Good afternoon!";
+} else {
+  echo "Good night!";
+}
 ?>
-  </body>
+ 
+</body>
 </html>
