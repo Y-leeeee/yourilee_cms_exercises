@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PHP & MySQL</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
   <body>
   <?php
 function orderJuice($item_array) {
