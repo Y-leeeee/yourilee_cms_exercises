@@ -1,11 +1,17 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_REQUEST['username'] ?? '';
-    echo "입력된 이름: " . htmlspecialchars($username);
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<?php include "header.php";
+echo "<br>";
+$a=9;
+$b=1;
+while($b<=9) {
+    $sum = $a * $b;
+    echo $a . " * " . $b . " = " . $sum . "<br>";
+    $b++;
 }
-?>
-<form method="POST">
-    <label for="username">이름:</label>
-    <input type="text" id="username" name="username" placeholder="이름 입력">
-    <input type="submit" value="제출">
-</form>
+echo "<br>";
+include "footer.php";
+?>    
+</body>
+</html>

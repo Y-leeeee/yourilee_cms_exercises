@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<?php
+<?php include "header.php";
+echo "<br>";
 echo "Today is " . date("l, ") . date("Y.m.d") . "
 <br>";
     $dag = date("d");
@@ -10,7 +11,8 @@ echo "Today is " . date("l, ") . date("Y.m.d") . "
     }else{
         echo date("Y.m.d") . " is an odd date";
     }
-
+    echo "<br>";
+    include "footer.php";
     
 ?>    
 </body>
